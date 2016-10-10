@@ -45,6 +45,7 @@
         static createMultiContractError = "无法添加多方签名合约，因为当前钱包中不包含签署该合约的私钥。";
         static createMultiContractSuccess = "智能合约创建成功";
         static changePwdSuccess = "修改钱包密码成功";
+        static menu = "菜单";
     }
 
     class globel_en
@@ -80,5 +81,6 @@
         static createMultiContractError = "无法添加多方签名合约，因为当前钱包中不包含签署该合约的私钥。";
         static createMultiContractSuccess = "智能合约创建成功";
         static changePwdSuccess = "修改钱包密码成功";
+        static menu = "menu";
     }
 }
