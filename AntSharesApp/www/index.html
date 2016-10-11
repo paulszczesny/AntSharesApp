@@ -194,9 +194,9 @@
                 </div>
                 <div id="Tab_Account_Import" class="form-horizontal tab-pane">
                     <fieldset>
-                        <h2 class="page-header">导入账户</h2>
+                        <h2 class="page-header lang-import-acc"></h2>
                         <div class="form-group">
-                            <label class="col-sm-4 control-label">输入私钥</label>
+                            <label class="col-sm-4 control-label lang-input-prikey"></label>
                             <div class="col-sm-6">
                                 <input class="form-control" id="import_prikey_input" name="import_prikey_input" type="text" placeholder="输入私钥，要求WIF格式" data-val="true" data-val-required="私钥不能为空！" data-val-length-max="52" data-val-length-min="52" data-val-length="WIF私钥必须是52位的Base58编码。" />
                                 <span class="text-danger" data-valmsg-for="import_prikey_input" data-valmsg-replace="true"></span>
@@ -204,20 +204,20 @@
                         </div>
                         <div class="form-group">
                             <div class="col-sm-4 col-md-push-4 col-sm-push-4">
-                                <button id="import_prikey" type="button" class="btn btn-primary">导入账户</button>
+                                <button id="import_prikey" type="button" class="btn btn-primary lang-btn-import-acc"></button>
                             </div>
                         </div>
                     </fieldset>
                     <div>
-                        <a class="tab-trigger" href="#Tab_Account_Index">返回账户列表</a>
+                        <a class="tab-trigger lang-return-acclist" href="#Tab_Account_Index"></a>
                     </div>
                 </div>
                 <div id="Tab_Contract_Index" class="tab-pane">
                     <form id="form_contract_list">
-                        <h2 class="page-header">合约账户</h2>
+                        <h2 class="page-header lang-contract-account"></h2>
                         <div class="row nomargin">
                             <div class="col-md-12" style="padding: 0; margin-bottom: 10px;">
-                                <div>钱包名称：<span id="contract_list_wallet"></span></div><br />
+                                <div class="lang-wallet-name">：<span id="contract_list_wallet"></span></div><br />
                                 <div class="btn-group">
                                     <a class="tab-trigger btn btn-primary" href="#Tab_Contract_CreateMultiSig">创建多方签名账户</a>
                                 </div>

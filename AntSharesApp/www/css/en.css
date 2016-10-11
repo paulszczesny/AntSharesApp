@@ -1,4 +1,7 @@
-﻿title::after { content:'Antshares APP beta' }
+﻿.alert-info { display:none }
+
+
+title::after { content:'Antshares APP beta' }
 .lang-title::after { content:'Antshares APP beta' }
 .lang-create-wallet::after { content:'创建钱包' }
 .lang-wallet::after { content:'钱包' }
