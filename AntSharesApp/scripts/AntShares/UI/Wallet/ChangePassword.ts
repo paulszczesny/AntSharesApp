@@ -26,7 +26,7 @@
                     if (result)
                     {
                         $("#change_error").hide();
-                        alert(Resources.globel.changePwdSuccess);
+                        alert(Resources.global.changePwdSuccess);
                     }
                     else
                     {

@@ -21,7 +21,7 @@
                     tx.outputs[0].scriptHash = result;
                     tx.outputs[0].value = Fixed8.parse($("#Tab_Asset_Transfer .pay_value").val());
                     if (Global.Wallet.makeTransaction(tx, Fixed8.Zero) == null)
-                        throw new Error(Resources.globel.insufficientFunds);
+                        throw new Error(Resources.global.insufficientFunds);
                     return Core.SignatureContext.create(tx);
                 }).then(result =>
                 {
@@ -29,19 +29,19 @@
                     return Global.Wallet.sign(context);
                 }).then(result =>
                 {
-                    if (!result) throw new Error(Resources.globel.canNotSign);
+                    if (!result) throw new Error(Resources.global.canNotSign);
                     if (!context.isCompleted())
-                        throw new Error(Resources.globel.thisVersion1);
+                        throw new Error(Resources.global.thisVersion1);
                     tx.scripts = context.getScripts();
                     return Global.Wallet.sendTransaction(tx);
                 }).then(result =>
                 {
-                    if (!result) throw new Error(Resources.globel.txError1);
+                    if (!result) throw new Error(Resources.global.txError1);
                     return Global.Node.relay(tx);
                 }).then(result =>
                 {
                     TabBase.showTab("#Tab_Asset_Index");
-                    alert(Resources.globel.contractInfo);
+                    alert(Resources.global.contractInfo);
                 }).catch(reason =>
                 {
                     alert(reason);

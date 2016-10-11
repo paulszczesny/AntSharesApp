@@ -2,17 +2,17 @@
 {
     export class Resources
     {
-        static get globel()
+        static get global()
         {
             let currentLanguage = getCookie('lang');
             if (currentLanguage == 'en')
-                return globel_en;
+                return global_en;
             if (currentLanguage == 'zh')
-                return globel_zh;
+                return global_zh;
         }
     }
 
-    class globel_zh
+    class global_zh
     {
         static openWalletAlert = "打开钱包成功";
         static createWalletAlert = "创建钱包成功";
@@ -48,7 +48,7 @@
         static menu = "菜单";
     }
 
-    class globel_en
+    class global_en
     {
         static openWalletAlert = "open wallet successed";
         static createWalletAlert = "创建钱包成功";

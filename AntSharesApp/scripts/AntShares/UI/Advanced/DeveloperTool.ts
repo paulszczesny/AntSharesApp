@@ -21,7 +21,7 @@
             try {
                 if (strRelayData == "")
                 {
-                    alert(Resources.globel.pleaseInputData);
+                    alert(Resources.global.pleaseInputData);
                 } else {
                     let objRelayData = JSON.parse(strRelayData); //由字符串转换为JSON对象
                     Core.SignatureContext.Parse(objRelayData).then(context => {
@@ -38,7 +38,7 @@
                 }
             } catch (e) {
                 if (e instanceof SyntaxError) {
-                    alert(Resources.globel.dataFormatError);
+                    alert(Resources.global.dataFormatError);
                 }
                 else{
                     alert(e);
@@ -51,7 +51,7 @@
             let strRelayData: string = $("#Tab_Advanced_DeveloperTool #relay_data").val();
             try {
                 if (strRelayData == "") {
-                    alert(Resources.globel.pleaseInputData);
+                    alert(Resources.global.pleaseInputData);
                 } else {
                     let objRelayData = JSON.parse(strRelayData); //由字符串转换为JSON对象
 
@@ -64,10 +64,10 @@
                     }).then(success => {
                         if (success)
                         {
-                            alert(Resources.globel.relaySuccess);
+                            alert(Resources.global.relaySuccess);
                         } else
                         {
-                            alert(Resources.globel.relayFaild);
+                            alert(Resources.global.relayFaild);
                         }
                     }).catch(reason => {
                         alert(reason);
@@ -75,7 +75,7 @@
                 }
             } catch (e) {
                 if (e instanceof SyntaxError) {
-                    alert(Resources.globel.dataFormatError);
+                    alert(Resources.global.dataFormatError);
                 }
                 else {
                     alert(e);
